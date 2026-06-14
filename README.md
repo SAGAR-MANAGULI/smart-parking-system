@@ -82,7 +82,7 @@ MongoDB Atlas Database
 ![Features](Features.png)
 
 ### Live Status
-![Live Status](live status.png)
+![Live Status](Live-status.png)
 
 ### Admin Login
 ![Admin Login](AdminLogin.png)
