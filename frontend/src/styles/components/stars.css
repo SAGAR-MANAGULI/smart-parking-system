@@ -1,0 +1,20 @@
+/* stars.css – full‑page twinkling starfield */
+.stars {
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+    pointer-events: none;
+}
+
+
+
+/* subtle opacity pulse → twinkle */
+@keyframes twinkle {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
