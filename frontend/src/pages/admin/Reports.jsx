@@ -36,7 +36,7 @@ export default function Reports() {
 
             // ---- Vehicles ----
             const vehicleRes = await axios.get(
-                "http://localhost:5000/api/vehicles",
+                "https://smart-parking-system-f269.onrender.com/api/vehicles",
                 { headers }
             );
             const vehiclesArray = Array.isArray(vehicleRes.data)
@@ -46,7 +46,7 @@ export default function Reports() {
 
             // ---- Payments ----
             const paymentRes = await axios.get(
-                "http://localhost:5000/api/payments",
+                "https://smart-parking-system-f269.onrender.com/api/payments",
                 { headers }
             );
             const paymentsArray = Array.isArray(paymentRes.data)
@@ -64,7 +64,7 @@ export default function Reports() {
 
             // ---- Slots ----
             const slotRes = await axios.get(
-                "http://localhost:5000/api/slots",
+                "https://smart-parking-system-f269.onrender.com/api/slots",
                 { headers }
             );
             const available = (slotRes.data?.filter?.(

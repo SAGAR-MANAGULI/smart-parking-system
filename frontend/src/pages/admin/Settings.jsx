@@ -19,7 +19,7 @@ export default function Settings() {
             try {
 
                 const response = await axios.get(
-                    "http://localhost:5000/api/settings"
+                    "https://smart-parking-system-f269.onrender.com/api/settings"
                 );
 
                 setSettings({
@@ -51,7 +51,7 @@ export default function Settings() {
         try {
 
             await axios.put(
-                "http://localhost:5000/api/settings",
+                "https://smart-parking-system-f269.onrender.com/api/settings",
                 {
                     bikeHourlyRate: settings.bikeHourlyRate,
                     bikeDailyRate: settings.bikeDailyRate,

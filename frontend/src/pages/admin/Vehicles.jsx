@@ -21,7 +21,7 @@ export default function Vehicles() {
             const token = localStorage.getItem("token");
             const response =
                 await axios.get(
-                    "http://localhost:5000/api/vehicles",
+                    "https://smart-parking-system-f269.onrender.com/api/vehicles",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,
@@ -48,7 +48,7 @@ export default function Vehicles() {
             const token = localStorage.getItem("token");
 
             await axios.delete(
-                `http://localhost:5000/api/vehicles/${id}`,
+                `https://smart-parking-system-f269.onrender.com/api/vehicles/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -69,7 +69,7 @@ export default function Vehicles() {
             const token = localStorage.getItem("token");
 
             await axios.post(
-                "http://localhost:5000/api/vehicles/add",
+                "https://smart-parking-system-f269.onrender.com/api/vehicles/add",
                 {
                     ownerName,
                     vehicleNumber,

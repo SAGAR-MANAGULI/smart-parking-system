@@ -13,7 +13,7 @@ export default function Payments() {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "http://localhost:5000/api/vehicles",
+                "https://smart-parking-system-f269.onrender.com/api/vehicles",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -45,7 +45,7 @@ export default function Payments() {
             const token = localStorage.getItem("token");
 
             await axios.post(
-                "http://localhost:5000/api/payments/create",
+                "https://smart-parking-system-f269.onrender.com/api/payments/create",
                 {
                     vehicleId,
                     paymentMethod
@@ -74,7 +74,7 @@ export default function Payments() {
             const token = localStorage.getItem("token");
 
             await axios.post(
-                "http://localhost:5000/api/payments/stop",
+                "https://smart-parking-system-f269.onrender.com/api/payments/stop",
                 {
                     vehicleId,
                 },

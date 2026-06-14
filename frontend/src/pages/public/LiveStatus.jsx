@@ -24,10 +24,10 @@ function DashboardCards() {
                 headers: { Authorization: `Bearer ${token}` },
             };
 
-            const response = await axios.get("http://localhost:5000/api/settings", config);
+            const response = await axios.get("https://smart-parking-system-f269.onrender.com/api/settings", config);
             setTotalSlots(response.data.totalSlots);
 
-            const vehicleResponse = await axios.get("http://localhost:5000/api/vehicles", config);
+            const vehicleResponse = await axios.get("https://smart-parking-system-f269.onrender.com/api/vehicles", config);
 
             const occupied = vehicleResponse.data.data.filter(
                 vehicle => vehicle.vehicleStatus === "Parked"

@@ -10,7 +10,7 @@ export default function ParkingHistory() {
         try {
 
             const response = await axios.get(
-                "http://localhost:5000/api/vehicles"
+                "https://smart-parking-system-f269.onrender.com/api/vehicles"
             );
 
             setVehicles(response.data.data);
@@ -202,8 +202,8 @@ export default function ParkingHistory() {
 
                                         <span
                                             className={`px-3 py-1 rounded-full text-sm font-medium ${vehicle.paymentStatus === "Paid"
-                                                    ? "bg-green-500/20 text-green-400"
-                                                    : "bg-yellow-500/20 text-yellow-400"
+                                                ? "bg-green-500/20 text-green-400"
+                                                : "bg-yellow-500/20 text-yellow-400"
                                                 }`}
                                         >
                                             {vehicle.paymentStatus}

@@ -14,7 +14,7 @@ function ParkingSlots() {
                 const token = localStorage.getItem("token");
 
                 const response = await axios.get(
-                    "http://localhost:5000/api/slots",
+                    "https://smart-parking-system-f269.onrender.com/api/slots",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,
@@ -33,7 +33,7 @@ function ParkingSlots() {
             const token = localStorage.getItem("token");
 
             await axios.post(
-                "http://localhost:5000/api/slots/create",
+                "https://smart-parking-system-f269.onrender.com/api/slots/create",
                 {
                     slotNumber: slotNumber,
                     isOccupied: status === "Occupied",
@@ -58,7 +58,7 @@ function ParkingSlots() {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "http://localhost:5000/api/slots",
+                "https://smart-parking-system-f269.onrender.com/api/slots",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -83,7 +83,7 @@ function ParkingSlots() {
             const token = localStorage.getItem("token");
 
             await axios.delete(
-                `http://localhost:5000/api/slots/${id}`,
+                `https://smart-parking-system-f269.onrender.com/api/slots/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,

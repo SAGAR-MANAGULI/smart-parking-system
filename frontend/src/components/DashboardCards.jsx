@@ -25,7 +25,7 @@ function DashboardCards() {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "http://localhost:5000/api/settings",
+                "https://smart-parking-system-f269.onrender.com/api/settings",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -36,7 +36,7 @@ function DashboardCards() {
             setTotalSlots(response.data.totalSlots);
 
             const vehicleResponse = await axios.get(
-                "http://localhost:5000/api/vehicles",
+                "https://smart-parking-system-f269.onrender.com/api/vehicles",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
