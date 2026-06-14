@@ -72,17 +72,35 @@ Backend (Node.js + Express.js)
 MongoDB Atlas Database
 
 
-Screenshots  
-![Home page](<Screenshot 2026-06-14 192821.png>)
-![Features](<Screenshot 2026-06-14 192905.png>)
-![Live Status](<Screenshot 2026-06-14 192922.png>)
-![Login page](<Screenshot 2026-06-15 042101.png>)
-![Vehicle Slot Booking](<Screenshot 2026-06-15 041412.png>)
-![Payment](<Screenshot 2026-06-15 041437.png>)
-![Payment History](<Screenshot 2026-06-15 041548.png>)
-![Report and Analysis](<Screenshot 2026-06-15 041558.png>)
-![Setting](<Screenshot 2026-06-15 041630.png>)
 
+## Screenshots
+
+### Home Page
+![Home Page](Home.png)
+
+### Features
+![Features](Features.png)
+
+### Live Status
+![Live Status](live status.png)
+
+### Admin Login
+![Admin Login](AdminLogin.png)
+
+### Dashboard
+![Dashboard](DashBoard.png)
+
+### Payment
+![Payment](Payment.png)
+
+### Parking History
+![Parking History](History.png)
+
+### Report and Analysis
+![Report and Analysis](Report and Analysis.png)
+
+### Settings
+![Settings](Setting.png)
 ---
 
 # Technology Stack
